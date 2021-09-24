@@ -6,14 +6,14 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Bagus";
+  sender = "fadhli";
 }
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Pacarku", "Aku ada pertanyaan nih buat kamu yangg", "question").then(function () {
-    Swal.fire("Jawab yang jujur ya!").then(function () {
-      Swal.fire("Awas aja kalau kamu bohong", "", "error").then(function () {
+  Swal.fire("Haii My Cantik", "Aku ada pertanyaan nih buat kamu bby", "question").then(function () {
+    Swal.fire("Jawab yang jujur yaa").then(function () {
+      Swal.fire("Awas aja kalau kamu bohong😤", "", "error").then(function () {
 
         const {
           value: name
@@ -35,16 +35,16 @@ document.querySelector(".tombol").addEventListener('click', function () {
             showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
-            denyButtonText: `Enggak`,
+            denyButtonText: `Ngga`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`${sender} juga sayang bangett sama ${nama}`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
                   input: 'range',
-                  inputLabel: 'Antara 1 - 100 ya',
+                  inputLabel: 'Antara 1 - 100 pilih',
                   inputAttributes: {
                     min: 1,
                     max: 100,
@@ -53,19 +53,19 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Makasih ya udah sayang sama ${sender} ${val}%`).then(function () {
+                  Swal.fire(`Maaciw ya udah sayang sama ${sender} ${val}%`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
-                      denyButtonText: `Enggak`,
+                      denyButtonText: `Ngga`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhu iya ${sender} juga kangen ${nama} , makasihhh yaa`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
-                            Swal.fire('Coba klik ikon hati di paling bawah dong')
+                        Swal.fire(`Huhuhuu iyaa ${sender} juga kangen bettt sama ${nama} 🤪`).then(function () {
+                          Swal.fire('Terakhir deh sayang..').then(function () {
+                            Swal.fire('Coba kamu klik ikon hati di paling bawah dong:>')
                           })
                         })
                       } else if (result.isDenied) {
