@@ -1,3 +1,3 @@
 ## 4you
 
-[``LINK``](https://github.com/xanzheus.github.io/4you/)
+[``LINK``](https://xanzheus.github.io/4you/)
