@@ -10,7 +10,7 @@ if (url.searchParams.get('by') != null) {
 }
 
 
-document.querySelector(".tombol").addEventListener('click', function () {
+document.querySelector(".tombol").addEventListener('Klik Disimni', function () {
   Swal.fire("Haii My Cantik", "Aku ada pertanyaan nih buat kamu bby", "question").then(function () {
     Swal.fire("Jawab yang jujur yaa").then(function () {
       Swal.fire("Awas aja kalau kamu bohong😤", "", "error").then(function () {
