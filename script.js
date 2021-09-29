@@ -24,7 +24,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb'
+              return 'Isi dulu dong beib'
             } else {
               nama = value;
             }
@@ -39,7 +39,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang bangett sama ${nama}`).then(function () {
+              Swal.fire(`${sender} juga sayang bangett sama ${nama} ʕ•́ᴥ•̀ʔっ♡`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
@@ -53,7 +53,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Maaciw ya udah sayang sama ${sender} ${val}%`).then(function () {
+                  Swal.fire(`Maaciw ya udah sayang sama ${sender} ${val}% 😡🖤`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
                       showDenyButton: true,
